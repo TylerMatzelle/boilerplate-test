@@ -1,9 +1,19 @@
-function helloworld(message: string) {
-    console.log("Hello World!");
+let wall_length = 96;
+let beams =0;
 
-    const updatedmessage = { f: 1, b: 2 };
-
-    return 0;
+if(wall_length > 100){
+    beams = beams +1;
 }
 
-helloworld("Goodbye World");
+else if(wall_length < 2){
+    beams = beams - 1;
+}
+
+else{
+    beams = beams * 9;
+}
+
+beams = (wall_length > 100) ? beams + 1 : beams - 1;
+
+let condition:boolean = true;
+let result = ("false") ? true : false;
